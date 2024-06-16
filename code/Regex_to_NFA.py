@@ -233,7 +233,7 @@ def output_nfa(arqv):
         outjson.write(json.dumps(nfa, indent = 4))
         
 class Conversor_Regex_NFA:
-    def __init__(self, regex, arqv):
+    def __init__(self, regex:json, arqv:int):
         self.reg = regex["expression"]
         self.pr = polish_regex(self.reg)
         self.et = make_exp_tree(self.pr)

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created with custom script.-->
+<structure>
+    <type>fa</type>
+    <automaton>
+        <!--The list of states.-->
+        <state id="0" name="S0">
+            <x>623.6239999664401</x>
+            <y>186.07617209135924</y>
+            <initial/>
+            <final/>
+        </state>
+        <state id="1" name="S1">
+            <x>385.2842573358967</x>
+            <y>380.0953114737642</y>
+            <final/>
+        </state>
+        <state id="2" name="S2">
+            <x>386.8000672764522</x>
+            <y>347.5864120423619</y>
+            <final/>
+        </state>
+        <!--The list of transitions.-->
+        <transition>
+            <from>0</from>
+            <to>1</to>
+            <read>a</read>
+        </transition>
+        <transition>
+            <from>0</from>
+            <to>2</to>
+            <read>b</read>
+        </transition>
+        <transition>
+            <from>1</from>
+            <to>1</to>
+            <read>a</read>
+        </transition>
+        <transition>
+            <from>1</from>
+            <to>2</to>
+            <read>b</read>
+        </transition>
+        <transition>
+            <from>2</from>
+            <to>1</to>
+            <read>a</read>
+        </transition>
+        <transition>
+            <from>2</from>
+            <to>2</to>
+            <read>b</read>
+        </transition>
+    </automaton>
+</structure>
