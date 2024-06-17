@@ -49,8 +49,9 @@ try:
         input_string = texts.readlines()
 
         for string in input_string:
-            is_accepted = simulator.simulate(string.replace("\n", ""))
-            print(f"A sentença '{string}' é aceita pelo AFD: {is_accepted}")
+            s = string.replace("\n", "")
+            is_accepted = simulator.simulate(s)
+            print(f"A sentença '{s}' é aceita pelo AFD: {is_accepted}")
             # print(string)
 
 except FileNotFoundError as e:
